@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Poppins:ital,wght@1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <title> Age calculator app </title>
+</head>
+<body>
+  <div id="container">
+  <div id="input">
+    <div class="input-taken" >
+    <p>Day</p>
+    <input type="text" placeholder="DD" id="d">
+  </div>
+  <div class="input-taken" >
+    <p>Month</p>
+    <input  type="text"  placeholder="MM" id="m">
+  
+  </div>
+  <div class="input-taken" >
+    <p>Year</p>
+    <input type="text" size="4" placeholder="YYYY" id="y" min ="0" max="2023">
+  </div>
+  <button onclick="calculate()">calculate age</button>
+</div>
+
+
+
+<div id="output">
+  <img id="arrow" src="./assets/images/reshot-icon-play-arrow-PBJVFCA4N8.svg" alt="icon-arrow">
+  <div id="year"> 
+  <h2 id="change-year">-- </h2>
+  <h2  id="real">years</h2>
+  </div>
+  <div id="month">
+  <h2 id="change-month">--</h2>
+  <h2 id="real">months</h2>
+  </div>
+  <div id="day">
+  <h2 id="change-days">-- </h2>
+  <h2 id="real">days</h2>
+  </div>
+  </div>
+  
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
